@@ -84,11 +84,11 @@ public class Compiler {
         while(ver.equalsIgnoreCase("yes")) {
         System.out.println("Enter at least 3 skills");
         String skill1=errorCheck.blankChecker("Enter your first skill : ");
-        String prof1=errorCheck.blankChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert): ");
+        String prof1=errorCheck.blankWordChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert): ");
         String skill2=errorCheck.blankChecker("Enter your second skill : ");
-        String prof2=errorCheck.blankChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert) : ");
+        String prof2=errorCheck.blankWordChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert) : ");
         String skill3=errorCheck.blankChecker("Enter your third skill : ");
-        String prof3=errorCheck.blankChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert) : ");
+        String prof3=errorCheck.blankWordChecker("Enter your rating/proficiency (Fundamental, Novice, Intermediate, Advanced, Expert) : ");
         System.out.println(" ");
         skillsArrayList.add(new Skills(skill1,prof1,skill2,prof2,skill3,prof3));
         System.out.println("Do you want to add another one?(yes/no)");
