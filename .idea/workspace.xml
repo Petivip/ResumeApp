@@ -5,8 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ResumeApp/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ResumeApp/Compiler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ResumeApp/ErrorCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ResumeApp/ErrorCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ResumeApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ResumeApp/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ErrorCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +71,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573135943371</updated>
-      <workItem from="1573135947951" duration="24471000" />
+      <workItem from="1573135947951" duration="24646000" />
+      <workItem from="1573220778956" duration="3450000" />
     </task>
     <servers />
   </component>
@@ -80,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

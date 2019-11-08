@@ -2,6 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ErrorCheck {
@@ -41,7 +42,7 @@ public class ErrorCheck {
             System.out.print(sent);
             Name = sc.nextLine();
             try {
-                if (!isValidFormat("dd/MM/yyyy",Name)) {
+                if (!isValidDate(Name)) {
                     //throw and exception
                     throw new NullPointerException("Please use the right date format as specified above");
                 }
@@ -50,24 +51,20 @@ public class ErrorCheck {
                 System.out.println(e.getMessage());
             }
 
-        } while (!isValidFormat("dd/MM/yyyy",Name));
+        } while (!isValidDate(Name));
 
         return Name;
 
     }
-    public static boolean isValidFormat(String format, String value) {
-        Date date = null;
-        try {
-            SimpleDateFormat sdf = new SimpleDateFormat(format);
-            date = sdf.parse(value);
-            if (!value.equals(sdf.format(date))) {
-                date = null;
-            }
-        } catch (ParseException ex) {
-            ex.printStackTrace();
-        }
-        return date != null;
+    public static boolean isValidDate(String d)
+    {
+        String regex = "^(1[0-2]|0[1-9])/(3[01]"
+                + "|[12][0-9]|0[1-9])/[0-9]{4}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher((CharSequence)d);
+        return matcher.matches();
     }
+
 
 
     //email format checker

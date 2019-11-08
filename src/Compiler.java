@@ -32,7 +32,7 @@ public class Compiler {
         Scanner key = new Scanner(System.in);
 
         String ver=" ";
-        System.out.println("Do you to add educational achievements?(yes/no)");
+        System.out.println("Do you want to add educational achievements?(yes/no)");
         ver=key.next();
         if(ver.equalsIgnoreCase("yes")) {
             while (ver.equalsIgnoreCase("yes")) {
@@ -54,7 +54,7 @@ public class Compiler {
     public void exprience(){
         Scanner key = new Scanner(System.in);
         String ver=" ";
-        System.out.println("Do you to add work experience?(yes/no)");
+        System.out.println("Do you want to add work experience?(yes/no)");
         ver=key.next();
         if(ver.equalsIgnoreCase("yes")) {
         while(ver.equalsIgnoreCase("yes")) {
