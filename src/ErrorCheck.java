@@ -150,13 +150,17 @@ public class ErrorCheck {
     public  String blankWordChecker(String sent ) throws NullPointerException{
         Scanner sc = new Scanner(System.in);
         String Name;
+        boolean check=false;
 
         do {
 
             System.out.print(sent);
             Name = sc.nextLine();
+            if(Name.equalsIgnoreCase("Fundamental" )||Name.equalsIgnoreCase("Novice")||Name.equalsIgnoreCase("Intermediate")||Name.equalsIgnoreCase("Advanced")||Name.equalsIgnoreCase("expert")){
+                check=true;
+            }
             try {
-                if (!Name.equalsIgnoreCase("Fundamental" )||!Name.equalsIgnoreCase("Novice")||!Name.equalsIgnoreCase("Intermediate")||!Name.equalsIgnoreCase("Advanced")||!Name.equalsIgnoreCase("Expert")){
+                if (!check){
                     //throw and exception
                     throw new NullPointerException("please choose and put one of the above specified words");
                 }
@@ -165,7 +169,7 @@ public class ErrorCheck {
                 System.out.println(e.getMessage());
             }
 
-        } while (!Name.equalsIgnoreCase("Fundamental" )||!Name.equalsIgnoreCase("Novice")||!Name.equalsIgnoreCase("Intermediate")||!Name.equalsIgnoreCase("Advanced")||!Name.equalsIgnoreCase("Expert"));
+        } while (!check);
 
         return Name;
 
